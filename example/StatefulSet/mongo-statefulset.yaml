@@ -21,9 +21,9 @@ spec:
   ports:
   - port: 27017
     targetPort: 27017
+  clusterIP: None
   selector:
     role: mongo
-  type: LoadBalancer
 ---
 apiVersion: apps/v1beta1
 kind: StatefulSet
